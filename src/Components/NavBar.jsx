@@ -5,8 +5,8 @@ const NavBar = () => {
   return (
     <nav className="flex items-center justify-center px-24 py-5 fixed top-0 w-full">
       <div className="flex items-center justify-between w-full">
-        <a href="" className="text-4xl font-bold italic">
-          Jas.
+        <a href="" className="w-22">
+          <img src="/my-logo.png" alt="asds" />
         </a>
 
         <div className="font-ovo flex gap-8 shadow-sm bg-white/50 px-12 py-3 rounded-full">
