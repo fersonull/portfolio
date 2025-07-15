@@ -31,12 +31,12 @@ const Hero = () => {
         delay={1.2}
         className="flex items-center justify-center gap-4"
       >
-        <button className="cursor-pointer text-sm font-nunito px-6 py-2 bg-zinc-900 rounded-full text-white flex items-center justify-center gap-2">
+        <a className="cursor-pointer text-sm font-nunito px-6 py-2 bg-zinc-900 rounded-full text-white flex items-center justify-center gap-2 border">
           contact me <FiArrowUpRight size={17} />
-        </button>
-        <button className="cursor-pointer text-sm font-nunito px-6 py-2 border border-zinc-900 rounded-full flex items-center justify-center gap-2">
+        </a>
+        <a className="cursor-pointer text-sm font-nunito px-6 py-2 border border-zinc-900 rounded-full flex items-center justify-center gap-2 hover:text-white hover:bg-zinc-700 transition-all">
           my resume <MdOutlineFileDownload size={17} />
-        </button>
+        </a>
       </AnimatedDiv>
     </div>
   );

@@ -3,7 +3,7 @@ import React from "react";
 const BlurBlob = () => {
   return (
     <div>
-      <div className="w-140 h-100 rounded-full blur-3xl -z-10 opacity-50 absolute -top-30 start-[10rem]">
+      <div className="w-140 h-100 rounded-full blur-3xl -z-10 opacity-60 absolute -top-30 start-[10rem]">
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
           <path
             fill="#FFD6E8"
@@ -12,7 +12,7 @@ const BlurBlob = () => {
           />
         </svg>
       </div>
-      <div className="w-100 h-100 rounded-full blur-3xl -z-10 opacity-40 absolute top-[20rem] start-[70rem]">
+      <div className="w-100 h-100 rounded-full blur-3xl -z-10 opacity-60 absolute top-[20rem] start-[70rem]">
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
           <path
             fill="#FFD6E8"
