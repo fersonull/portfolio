@@ -15,7 +15,7 @@ const AnimateOnView = ({
       className={className}
       initial={{ opacity: 0, y: yInit, x: xInit, filter: "blur(10px)" }}
       whileInView={{ opacity: 1, y: yEnd, x: xEnd, filter: "blur(0px)" }}
-      transition={{ duration: 1, delay: delay, ease: "easeOut" }}
+      transition={{ duration: 0.8, delay: delay, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.5 }}
     >
       {children}

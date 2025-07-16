@@ -1,22 +1,49 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { useInView } from "react-intersection-observer";
 import { FiArrowUpRight } from "react-icons/fi";
 import { navs } from "../../../constants/index";
 import { FiAlignRight } from "react-icons/fi";
 import AnimateOnView from "./AnimateOnView";
+import SideBar from "./SideBar";
 
 const NavBar = () => {
+  const [isScroll, setScroll] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="flex items-center justify-center md:px-24 md:py-5 px-6 py-4 fixed top-0 w-full">
+    <nav
+      className={`transition-all flex items-center justify-center md:px-24 md:py-5 px-6 py-4 fixed top-0 w-full z-[9999] ${
+        isScroll ? "bg-white/50 backdrop-blur-sm shadow" : ""
+      }`}
+    >
+      {/* <SideBar /> */}
       <div className="flex items-center justify-between w-full">
-        <div>
-          <AnimateOnView xInit={-50} href="" className="w-22">
+        <a href="#home">
+          <AnimateOnView xInit={-50} className="w-22">
             <img src="/my-logo.png" alt="asds" />
           </AnimateOnView>
-        </div>
+        </a>
 
         <AnimateOnView
           yInit={-30}
-          className="font-ovo lg:flex gap-8 shadow-sm bg-white/50 px-12 py-3 rounded-full hidden"
+          className={`font-ovo lg:flex gap-8 px-12 py-3 rounded-full hidden ${
+            isScroll ? "" : "bg-white/50 shadow-sm"
+          }`}
         >
           {navs.map(({ id, label }) => (
             <a key={id} href={`#${id}`}>

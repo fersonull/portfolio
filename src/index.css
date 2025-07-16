@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+* {
+  scroll-behavior: smooth;
+}
+
 .bg__dark {
   @apply bg-zinc-900;
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 const BlurBlob = ({ top, left, width }) => {
   return (
-    <div>
+    <>
       <div
         className=" rounded-full blur-2xl -z-10 opacity-60 absolute"
         style={{ top: top, left: left, width: width }}
@@ -24,7 +24,7 @@ const BlurBlob = ({ top, left, width }) => {
           />
         </svg>
       </div>
-    </div>
+    </>
   );
 };
 
