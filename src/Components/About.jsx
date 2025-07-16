@@ -26,6 +26,7 @@ const About = () => {
       <div className="flex md:flex-row flex-col md:items-start items-center justify-center md:gap-10 gap-5">
         <AnimateOnView
           yInit={50}
+          delay={0.5}
           className="rounded-lg overflow-hidden w-[17rem] md:w-md border border-zinc-900 "
         >
           <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D" />
@@ -34,7 +35,7 @@ const About = () => {
           <AnimateOnView
             yInit={50}
             delay={0.6}
-            className="md:max-w-xl max-w-lg md:text-start text-center"
+            className="md:max-w-xl max-w-lg md:text-start text-center px-4 md:px-0"
           >
             Full-Stack Web Developer crafting{" "}
             <span className="font-bold">responsive</span>,{" "}
@@ -44,7 +45,7 @@ const About = () => {
           </AnimateOnView>
           <AnimateOnView
             yInit={50}
-            delay={0.9}
+            delay={1}
             className="flex flex-col font-arial w-full"
           >
             Cards here
