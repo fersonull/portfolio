@@ -3,13 +3,14 @@ import { techStack } from "../../constants";
 import AnimateOnView from "./ui/AnimateOnView";
 import { motion } from "framer-motion";
 import BlurBlob from "./BlurBlob";
+import Blob from "../Components/ui/Blob";
 
 const containerVariants = {
   hidden: {},
   show: {
     transition: {
       staggerChildren: 0.15,
-      delayChildren: 1.3, //
+      delayChildren: 1.2, //
     },
   },
 };
@@ -27,25 +28,28 @@ const itemVariants = {
 const AboutMe = () => {
   return (
     <section id="about" className=" px-6 md:px-24 py-20 text-zinc-800 relative">
-      <div className="max-w-4xl mx-auto">
+      {/* <Blob top={500} left={200} width={300} /> */}
+
+      <div className="max-w-4xl mx-auto mt-10">
         <AnimateOnView
           yInit={50}
-          className="text-3xl md:text-4xl font-bold mb-6"
+          className="text-2xl md:text-4xl font-bold md:mb-6 mb-3 bg-gradient-to-br from-white to-pink-700 bg-clip-text text-transparent"
         >
           About Me
         </AnimateOnView>
-        <AnimateOnView yInit={50} delay={0.3} className="text-lg leading-8">
+        <AnimateOnView yInit={50} delay={0.3} className="md:text-lg leading-8">
           I'm a Full-Stack Web Developer passionate about building intuitive and
           scalable web applications. With a solid foundation in both front-end
           and back-end development, I create responsive interfaces using{" "}
           <strong>React</strong> and <strong>Tailwind CSS</strong>, and robust
           server-side solutions with <strong>Node.js</strong>,
-          <strong> Express</strong>, and <strong>MongoDB</strong>.
+          <strong> Express</strong>, <strong>MongoDB</strong>, and{" "}
+          <strong>Laravel/PHP</strong>.
         </AnimateOnView>
         <AnimateOnView
           yInit={50}
           delay={0.6}
-          className="text-lg leading-8 mt-4"
+          className="md:text-lg leading-8 md:mt-4 mt-2"
         >
           I enjoy solving real-world problems, learning new technologies, and
           contributing to meaningful projects. Whether it's collaborating with
@@ -55,19 +59,19 @@ const AboutMe = () => {
         <AnimateOnView
           yInit={50}
           delay={0.9}
-          className="text-lg leading-8 mt-4"
+          className="md:text-lg leading-8 md:mt-4 mt-2"
         >
-          When I'm not coding, you'll find me exploring tech communities,
-          refining my skills, or diving into design systems and DevOps
-          practices.
+          Beyond coding, I stay active in tech communities, continuously sharpen
+          my skills, and explore design systems and DevOps practices to enhance
+          development workflows and product quality.
         </AnimateOnView>
 
         {/* Tech Stack */}
-        <div className="mt-12">
+        <div className="md:mt-9 mt-6">
           <AnimateOnView
             yInit={50}
             delay={1}
-            className="md:text-3xl text-2xl md:text-start text-center font-semibold mb-4 "
+            className="md:text-3xl text-2xl md:text-start text-center font-semibold mb-4 bg-gradient-to-br from-white to-pink-700 bg-clip-text text-transparent"
           >
             Tech Stack
           </AnimateOnView>

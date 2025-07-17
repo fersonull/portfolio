@@ -27,7 +27,7 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`transition-all flex items-center justify-center md:px-24 md:py-5 px-6 py-4 fixed top-0 w-full z-[9999] ${
+      className={`transition-all flex items-center justify-center md:px-24 md:py-4 px-6 py-4 fixed top-0 w-full z-[9999] ${
         isScroll ? "bg-white/50 backdrop-blur-sm shadow" : ""
       }`}
     >
