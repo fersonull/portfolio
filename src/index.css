@@ -4,6 +4,11 @@
   scroll-behavior: smooth;
 }
 
+.text-outline-2 {
+  -webkit-text-stroke: 2px black; /* Tailwind's blue-900 */
+  color: transparent;
+}
+
 .bg__dark {
   @apply bg-zinc-900;
 }

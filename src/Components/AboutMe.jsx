@@ -27,13 +27,14 @@ const itemVariants = {
 
 const AboutMe = () => {
   return (
-    <section id="about" className=" px-6 md:px-24 py-20 text-zinc-800 relative">
-      {/* <Blob top={500} left={200} width={300} /> */}
-
-      <div className="max-w-4xl mx-auto mt-10">
+    <section
+      id="about"
+      className="flex px-6 md:px-24 py-20 text-zinc-800 relative"
+    >
+      <div className="flex-1 max-w-4xl mx-auto md:mt-12">
         <AnimateOnView
           yInit={50}
-          className="text-2xl md:text-4xl font-bold md:mb-6 mb-3 bg-gradient-to-br from-white to-pink-700 bg-clip-text text-transparent"
+          className="text-2xl md:text-4xl font-bold md:mb-6 mb-3"
         >
           About Me
         </AnimateOnView>
